@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+  },
+  "ConnectionStrings": {
+    "SqlServerConnection": "connection string do sql server",
+    "MySqlConnection": "connection string do MySql",
+    "FirebaseConnection": "connection string do Firebase",
+    "AzureConnection": "connection string do Azure"
+  }
+}
