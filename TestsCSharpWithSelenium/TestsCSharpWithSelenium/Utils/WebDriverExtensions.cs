@@ -23,10 +23,11 @@ namespace TestsCSharpWithSelenium.Utils
             webElement.SendKeys(value);
         }
 
-        public static void Submit(this IWebDriver webDriver,By by)
+        public static void Submit(this IWebDriver webDriver, By by)
         {
             IWebElement webElement = webDriver.FindElement(by);
             webElement.Submit();
         }
+
     }
 }

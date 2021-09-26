@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.IO;
 using TestsCSharpWithSelenium.Utils;
 
 namespace TestsCSharpWithSelenium.Screens
@@ -43,6 +44,71 @@ namespace TestsCSharpWithSelenium.Screens
         {
             WebDriverWait webDriverWait = new WebDriverWait(_webDriver, secondsToWait);
             webDriverWait.Until(x => !string.IsNullOrEmpty(x.FindElement(by).GetAttribute("value")));
+        }
+
+        public void TakePrintScreenImageFormatPng(string path, string file)
+        {
+            ITakesScreenshot takesScreenshot = _webDriver as ITakesScreenshot;
+            Screenshot screenshot = takesScreenshot.GetScreenshot();
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            screenshot.SaveAsFile($"{path}{file}", ScreenshotImageFormat.Png);
+        }
+
+        public void TakePrintScreenImageFormatJpeg(string path, string file)
+        {
+            ITakesScreenshot takesScreenshot = _webDriver as ITakesScreenshot;
+            Screenshot screenshot = takesScreenshot.GetScreenshot();
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            screenshot.SaveAsFile($"{path}{file}", ScreenshotImageFormat.Jpeg);
+        }
+
+        public void TakePrintScreenImageFormatBmp(string path, string file)
+        {
+            ITakesScreenshot takesScreenshot = _webDriver as ITakesScreenshot;
+            Screenshot screenshot = takesScreenshot.GetScreenshot();
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            screenshot.SaveAsFile($"{path}{file}", ScreenshotImageFormat.Bmp);
+        }
+
+        public void TakePrintScreenImageFormatGif(string path, string file)
+        {
+            ITakesScreenshot takesScreenshot = _webDriver as ITakesScreenshot;
+            Screenshot screenshot = takesScreenshot.GetScreenshot();
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            screenshot.SaveAsFile($"{path}{file}", ScreenshotImageFormat.Gif);
+        }
+
+        public void TakePrintScreenImageFormatTiff(string path, string file)
+        {
+            ITakesScreenshot takesScreenshot = _webDriver as ITakesScreenshot;
+            Screenshot screenshot = takesScreenshot.GetScreenshot();
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            screenshot.SaveAsFile($"{path}{file}", ScreenshotImageFormat.Tiff);
         }
     }
 }

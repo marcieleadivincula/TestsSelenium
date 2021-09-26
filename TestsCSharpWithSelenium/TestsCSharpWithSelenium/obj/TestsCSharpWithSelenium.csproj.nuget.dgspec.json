@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marciele\\source\\repos\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium.csproj": {}
+    "C:\\Users\\Marciele\\source\\repos\\TestsSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marciele\\source\\repos\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium.csproj": {
+    "C:\\Users\\Marciele\\source\\repos\\TestsSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marciele\\source\\repos\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium.csproj",
+        "projectUniqueName": "C:\\Users\\Marciele\\source\\repos\\TestsSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium.csproj",
         "projectName": "TestsCSharpWithSelenium",
-        "projectPath": "C:\\Users\\Marciele\\source\\repos\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium.csproj",
+        "projectPath": "C:\\Users\\Marciele\\source\\repos\\TestsSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium.csproj",
         "packagesPath": "C:\\Users\\Marciele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marciele\\source\\repos\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\obj\\",
+        "outputPath": "C:\\Users\\Marciele\\source\\repos\\TestsSelenium\\TestsCSharpWithSelenium\\TestsCSharpWithSelenium\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -41,5 +41,12 @@ namespace TestsCSharpWithSelenium.Screens
             string response = _webDriver.GetHtml(By.ClassName("texto-branco"));
             return response;
         }
+
+        public string GetErrorMessage()
+        {
+            WaitByHtml(TimeSpan.FromSeconds(15), By.Id("mensagemDeErro"));
+            string response = _webDriver.GetHtml(By.Id("mensagemDeErro")).Trim();
+            return response;
+        }
     }
 }
